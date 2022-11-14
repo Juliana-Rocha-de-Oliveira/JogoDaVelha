@@ -63,7 +63,7 @@ while(True):
         else:
             print(desenha_tabela(tabela))
             print('Posicao ja ocupada')
-    if(verifica_vitoria(tabela, 'X')):
+    if(verifica_vitoria(tabela, 'x')):
             print('Jogador numero 1 ganhou')
             break
     if(verificar_empate(tabela)):
@@ -80,12 +80,12 @@ while(True):
         else:
             print(desenha_tabela(tabela))
             print('Posicao ja ocupada')
-    if(verifica_vitoria(tabela, '0')):
-        print('Jogador numero 2 ganhoy')
-        break
-    if(verificar_empate(tabela)):
-        print('Empate')
-        break
+        if(verifica_vitoria(tabela, '0')):
+            print('Jogador numero 2 ganhoy')
+            break
+        if(verificar_empate(tabela)):
+            print('Empate')
+            break
 
 
 
